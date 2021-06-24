@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Score, ScoreItem } from '../shared/score-card/score-card.component';
+import { Score, ScoreItem } from '../shared/score-card/score-card.model';
 
 export interface MlbScore extends Score {
     id: string;

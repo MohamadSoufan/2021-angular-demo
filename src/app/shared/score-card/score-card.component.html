@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-content">
+      <div class="card-wrapper">
+          <div class="team1">
+              {{ scoreItem.awayScore.team }}
+          </div>
+          <div class="score1">
+              {{ scoreItem.awayScore.score }}
+          </div>
+          <div class="team2">
+              {{ scoreItem.homeScore.team }}
+          </div>
+          <div class="score2">
+              {{ scoreItem.homeScore.score }}
+          </div>
+          <div class="status">
+              <span class="tag is-pulled-right">{{ scoreItem.status }}</span>
+          </div>
+      </div>
+  </div>
+  <footer class="card-footer">
+      <span class="card-footer-item column is-one-quarter">
+          <a class="button" (click)="handleBoxClicked(scoreItem.id)">Box</a>
+      </span>
+  </footer>
+</div>
